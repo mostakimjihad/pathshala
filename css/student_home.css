@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: 0;
+    appearance: none;
+    text-decoration: none;
+}
+html{
+    font-size: 14px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 0.88rem;
+    background: beige;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: auto 75%;
+}
+
+a{
+    color: #363949;
+}
+img{
+    display: block;
+    width: 100%;
+}
+main{
+    margin-top: 1.4rem;
+    margin-right: 1.4rem;
+    width: auto;
+    margin-left: 20px;
+}
+
+main .class{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+main .class .class-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+main .class .image{
+    height: 100px;
+    width: 100px;
+}
+main .class .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 2px solid #6DC3D6;
+}
+
+main .class .class-content .join-class h2{
+
+    background-color: #04B69C;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+}
+
+.right{
+    background-color: #FFFFE0;
+    height: 100vh;
+}
+.right .top .profile img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    margin: 1rem;
+    border: 2px solid #04B69C;
+}
+.right .top{
+    display: flex;
+    align-items: center;
+}
+
+.right .right-sidebar h2{
+    text-align: center;
+    background-color: #04B69C;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+}
+
+.right .right-sidebar .todo{
+    width: auto;
+    padding: 1rem;
+}
+.right .right-sidebar .topic{
+    width: auto;
+    padding: 2rem;
+}
+
+.right .right-sidebar .schedule{
+    height: 10vh;
+    width: auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin: 10px;
+    display: flex;
+}
+.right .right-sidebar .schedule h3{
+    margin-right: 5px;
+}
+.right .right-sidebar .schedule .date{
+    padding: 4px;
+    background-color: #04B69C;
+    border-radius: 4px;
+    color: white;
+}
+.right .right-sidebar .schedule .month{
+    padding: 4px;
+    background-color: none;
+    border-radius: 4px;
+    background-color: #FFC0CB;
+}
+.right .right-sidebar .schedule .year{
+    padding: 4px;
+    background-color: none;
+    border-radius: 4px;
+    background-color:#6495ED;
+}
+.right .right-sidebar .schedule .class-name{
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+}
+h2, h1, p, h3, h4{
+    color: #363949;
+}
+
+.right .buttom .profile img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: .67rem;
+    margin: 1rem;
+}
+.right .buttom{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.right .right-sidebar ol li {
+    list-style-type: none;
+    counter-increment: item;
+    margin: 5px;
+    color: #363949;
+  }
+  
+.right .right-sidebar ol li:before {
+    content: counter(item);
+    margin-right: 7px;
+    font-size: 80%;
+    background-color: #6C63FF;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+
+  .buttom .logout a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }

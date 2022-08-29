@@ -1,0 +1,134 @@
+body{
+
+    background-color: #FDEADF;
+    padding : 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrapper{
+
+    height: 500px;
+    width: 900px;
+    box-shadow: 10px 10px 13px rgb(115, 121, 124);
+    border-radius: 30px;
+    padding: none;
+    display: flex;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+
+}
+
+.right{
+
+    background-color: #FDEADF;
+    height: 500px;
+    width: 430px;
+    border-radius: 30px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    align-items: center;
+}
+.left{
+
+    background-color: white;
+    height: 420px;
+    width: 270px;
+    border-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 10px 10px 13px rgb(115, 121, 124);
+    margin-right: 20px;
+    padding: 40px;
+    padding-left: 90px;
+    padding-right: 90px;
+
+}
+h1{
+    text-align: center;
+    opacity: .70;
+}
+.text_field{
+
+    background: none;
+    border-radius: 8px;
+    border: 2px solid #717082;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    
+}
+button{
+    
+    margin-left: 3px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 40px;
+    border: 2px solid #63626b;
+    border: none;
+    margin-top: 18px;
+    margin-bottom: 9px;
+    width: 100%;
+    background-color: #03B69C;
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 20px;
+    box-shadow: 3px 3px 8px #b1b1b1;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #6EC4D4;
+}
+
+img.main{
+    border-radius: 100px;
+    border: 10px solid white;
+    margin-left: 52px;
+    margin-top: 135px;
+    height: 200px;
+    width: 300px;
+}
+label{
+    margin-top: 2px;
+    margin-bottom: 3px;
+    opacity: .70;
+}
+.sign{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 100%;
+}
+
+a{
+    color : #6FC7DB;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: aqua;
+}
+
+.forgot_pass{
+    position: relative;
+}
+.others{
+    display: flex;
+    justify-content: center;
+    
+}
+img{
+    padding: 0px 4px 0px 4px;
+    cursor: pointer;
+}
+.fr{
+    margin-top: 7px;
+    text-align: center;
+}
+.rem{
+    margin-top: 9px;
+}

@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: 0;
+    appearance: none;
+    text-decoration: none;
+}
+html{
+    font-size: 14px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 0.88rem;
+    background: whitesmoke;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+a{
+    color: #363949;
+}
+img{
+    display: block;
+    width: 100%;
+}
+aside{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside .top{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .logo img{
+    width: 8rem;
+    height: 7rem;
+}
+
+aside .close{
+}
+
+aside .sidebar{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px 0px ;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+aside .sidebar a{
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+}
+
+aside .buttom .logout a{
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+}
+
+main{
+    margin-top: 1.4rem;
+    margin-right: 1.4rem;
+    width: auto;
+}
+
+main .banner{
+    height: 30vh;
+    width: auto;
+    background-color: white;
+    background-image: url("/image/banner.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+}
+
+main .banner h1{
+    position: absolute;
+    top: 82px;
+    margin-left: 2rem;
+    color: #363949;
+}
+
+main .banner h3{
+    position: absolute;
+    top: 146px;
+    margin-left: 2rem;
+    color: #363949;
+}
+
+main h1{
+    margin: 2rem auto 2rem 0;
+}
+
+main .meterial{
+    padding : 25px;
+    background-color: beige;
+    border-radius: 1rem;
+    box-shadow:  -15px -15px 15px rgba(255,255,255,0.2),
+                 15px 15px 15px rgba(0,0,0,0.1);
+    /*box-shadow: 10px 10px 13px rgb(115, 121, 124);*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+.right .top .profile img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    margin: 1rem;
+    border: 2px solid #04B69C;
+}
+.right .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+h2, h1, p, h3, h4{
+    color: #363949;
+}
+
+.right .buttom .profile img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: .67rem;
+    margin: 1rem;
+}
+.right .buttom{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.right .student .profile img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    margin: 1rem;
+}
+.right .student{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.right .right-sidebar ol li {
+    list-style-type: none;
+    counter-increment: item;
+    margin: 5px;
+    color: #363949;
+  }
+  
+.right .right-sidebar ol li:before {
+    content: counter(item);
+    margin-right: 7px;
+    font-size: 80%;
+    background-color: #6C63FF;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
