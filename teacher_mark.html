@@ -7,7 +7,7 @@
     <title>Pathshala | home</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
       rel="stylesheet">
-    <link rel="stylesheet" href="css/teacher_announcement.css">
+    <link rel="stylesheet" href="css/teacher_mark.css">
 </head>
 <body>
     <div class="container">
@@ -76,27 +76,62 @@
             </div>
         </aside>
         <main>
-            <div class="add-announcement-popup">
-                <span class="material-icons-sharp">
-                    highlight_off
-                    </span>
-                    <input type="text" placeholder="title">
-                    <textarea rows="auto" cols="auto"></textarea>
-                    <input type="submit" name="upoad" value="post" class="post">
-            </div>
-            <div class="add-announcement">
-                <span class="material-icons-sharp">
-                    add_alert
-                    </span>
-            </div>
             <div class="banner">
                 <h1>Web Programming Lab</h1>
                 <h3>title of the classroom</h3>
             </div>
-            <h1 class="announcement-heading">Announcement</h1>
-            <div class="announcement">
-                <h2>There will be no class tommorow</h2>
-                <p>for the academic meeting three will be no close tommrow the next class will be on jully 21 2022 at 10.00 am</p>
+            <div class="mark-top">
+                <input type="date" class="date">
+                <input type="submit" value="create sheet" class="create-sheet">
+                <input type="submit" name="show-sheet" value="show sheet" class="show-sheet">
+            </div>
+            <div class="mark">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Exam</th>
+                            <th>Mark</th>
+                            <th>Out Of</th>
+                            <th>Class Higest</th>
+                            <th>Topper</th>
+                            <th>Exam Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "heading">
+                            <td>CT1</td>
+                            <td>12</td>
+                            <td>15</td>
+                            <td>14</td>
+                            <td>Akramul Islam</td>
+                            <td>10/08/2022</td>
+                        </tr>
+                        <tr>
+                            <td>CT2</td>
+                            <td>13</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>Ratul Hassan</td>
+                            <td>29/08/2022</td>
+                        </tr>
+                        <tr>
+                            <td>CT3</td>
+                            <td>11</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>Ratul Hassan</td>
+                            <td>29/08/2022</td>
+                        </tr>
+                        <tr>
+                            <td>MID</td>
+                            <td>23</td>
+                            <td>30</td>
+                            <td>28.5</td>
+                            <td>Mokammal Haque</td>
+                            <td>15/09/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
         <div class="right">

@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border: 0;
+    appearance: none;
+    text-decoration: none;
+}
+html{
+    font-size: 14px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 0.88rem;
+    background: whitesmoke;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+a{
+    color: #363949;
+}
+img{
+    display: block;
+    width: 100%;
+}
+aside{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside .top{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .logo img{
+    width: 8rem;
+    height: 7rem;
+}
+
+aside .close{
+}
+
+aside .sidebar{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px 0px ;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+aside .sidebar a{
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+}
+
+aside .buttom .logout a{
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+}
+
+main{
+    margin-top: 1.4rem;
+    margin-right: 1.4rem;
+    width: auto;
+}
+
+main .banner{
+    height: 30vh;
+    width: auto;
+    background-color: white;
+    background-image: url("/image/banner.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+
+}
+
+main .banner h1{
+    position: absolute;
+    top: 82px;
+    margin-left: 2rem;
+    color: #363949;
+}
+
+main .banner h3{
+    position: absolute;
+    top: 146px;
+    margin-left: 2rem;
+    color: #363949;
+}
+
+main h1{
+    margin: 2rem auto 2rem 0;
+}
+
+main .mark{
+    margin-top : 2rem;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom : 1rem;  
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+main .mark table{
+    width: 100%;
+    text-align: center;
+}
+td{
+    margin: 40px;
+    opacity: .80;
+    padding: 10px;
+}
+th{
+    padding: 10px;
+    background-color: #04B69C;
+}
+
+
+.right .top .profile img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    margin: 1rem;
+    border: 2px solid #04B69C;
+}
+.right .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.right .right-sidebar .todo{
+    width: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin: 10px;
+}
+.right .right-sidebar .topic{
+    width: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin: 10px;
+
+}
+
+.right .right-sidebar .schedule{
+    height: 10vh;
+    width: auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin: 10px;
+    display: flex;
+}
+.right .right-sidebar .schedule h3{
+    margin-right: 5px;
+}
+.right .right-sidebar .schedule .date{
+    padding: 4px;
+    background-color: #04B69C;
+    border-radius: 4px;
+    color: white;
+}
+.right .right-sidebar .schedule .month{
+    padding: 4px;
+    background-color: none;
+    border-radius: 4px;
+}
+.right .right-sidebar .schedule .year{
+    padding: 4px;
+    background-color: none;
+    border-radius: 4px;
+}
+h2, h1, p, h3, h4{
+    color: #363949;
+}
+
+.right .buttom .profile img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: .67rem;
+    margin: 1rem;
+}
+.right .buttom{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.right .right-sidebar ol li {
+    list-style-type: none;
+    counter-increment: item;
+    margin: 5px;
+    color: #363949;
+  }
+  
+.right .right-sidebar ol li:before {
+    content: counter(item);
+    margin-right: 7px;
+    font-size: 80%;
+    background-color: #6C63FF;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed black;
+    border-radius: 10px;
+    margin: 10px;
+    opacity: .50;
+}
+.add:hover{
+    opacity: .90;
+    cursor: pointer;
+}
+
+.add-todo{
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 1rem;
+    display: none;
+}
+
+input{
+    background: none;
+    border-radius: 8px;
+    border: 2px solid #717082;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.submit{
+    background-color: #04B69C;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.submit:hover{
+    color: white;
+    background-color: #FF2E2E;
+}
+
+.add-next-class-topic{
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 1rem;
+    display: none;
+}
+
+.add-schedule{
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 1rem;
+    display: none;
+}
+
+main .attendance-top{
+    margin: 20px;
+    display: flex;
+}
+.date{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.create-sheet{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.show-sheet{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.show-sheet:hover{
+    color:white;
+    background-color: #363949;
+    cursor: pointer;
+}
+
+.create-sheet:hover{
+    color:white;
+    background-color: #363949;
+    cursor: pointer;
+}
+
+.date:hover{
+
+    color: white;
+    background-color:#04B69C;
+}

@@ -7,7 +7,7 @@
     <title>Pathshala | home</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
       rel="stylesheet">
-    <link rel="stylesheet" href="css/teacher_announcement.css">
+    <link rel="stylesheet" href="css/student_attendance.css">
 </head>
 <body>
     <div class="container">
@@ -76,27 +76,41 @@
             </div>
         </aside>
         <main>
-            <div class="add-announcement-popup">
-                <span class="material-icons-sharp">
-                    highlight_off
-                    </span>
-                    <input type="text" placeholder="title">
-                    <textarea rows="auto" cols="auto"></textarea>
-                    <input type="submit" name="upoad" value="post" class="post">
-            </div>
-            <div class="add-announcement">
-                <span class="material-icons-sharp">
-                    add_alert
-                    </span>
-            </div>
             <div class="banner">
                 <h1>Web Programming Lab</h1>
                 <h3>title of the classroom</h3>
             </div>
-            <h1 class="announcement-heading">Announcement</h1>
-            <div class="announcement">
-                <h2>There will be no class tommorow</h2>
-                <p>for the academic meeting three will be no close tommrow the next class will be on jully 21 2022 at 10.00 am</p>
+            <div class="attendance">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Present</th>
+                            <th>Absent</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "heading">
+                            <td>10/08/2022</td>
+                            <td><span class="material-icons-sharp" id="present">
+                                check_circle
+                                </span></td>
+                            <td><span class="material-icons-sharp" id="absent">
+                                cancel
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td>10/08/2022</td>
+                            <td><span class="material-icons-sharp" id="absent">
+                                cancel
+                                </span></td>
+                            <td><span class="material-icons-sharp" id="present">
+                                check_circle
+                                </span></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
         <div class="right">
@@ -116,16 +130,6 @@
                         <li>task 4</li>
                     </ol>
                 </div>
-                <div class="add">
-                    <span class="material-icons-sharp">
-                        add
-                        </span>
-                    <h2>add</h2>
-                </div>
-                <div class="add-todo">
-                    <input type="text" placeholder="task">
-                    <input type="submit" name="add-todo" value="submit" class="submit">
-                </div>
                 <h2>Next Class topic</h2>
                 <div class="topic">
                     <h3>title</h3>
@@ -133,32 +137,18 @@
                     <h3>title</h3>
                     <h4>subtitle</h4>
                 </div>
-                <div class="add">
-                    <span class="material-icons-sharp">
-                        add
-                        </span>
-                    <h2>add</h2>
-                </div>
-                <div class="add-next-class-topic">
-                    <input type="text" placeholder="title">
-                    <input type="text" placeholder="subtitle">
-                    <input type="submit" name="add-next-class-topic" value="submit" class="submit">
-                </div>
                 <h2>Next Class schedule</h2>
                 <div class="schedule">
                     <h3 class="date">29</h3>
                     <h3 class="month">August</h3>
                     <h3 class="year">2022</h3>
                 </div>
-                <div class="add">
-                    <span class="material-icons-sharp">
-                        add
-                        </span>
-                    <h2>add</h2>
-                </div>
-                <div class="add-schedule">
-                    <input type="date">
-                    <input type="submit" name="add-next-class-topic" value="submit" class="submit">
+                <h2>Teacher Info</h2>
+                <div class="buttom">
+                    <div class="profile">
+                        <img src="/image/Mahmuda-Rahman.jpg" alt="">
+                    </div>
+                    <p><b>Mahmuda Rahman</b><br>lab lecturer<br>Green University</p>
                 </div>
             </div>
         </div>

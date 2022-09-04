@@ -56,8 +56,6 @@ aside .logo img{
     height: 7rem;
 }
 
-aside .close{
-}
 
 aside .sidebar{
     background-color: white;
@@ -86,55 +84,92 @@ aside .buttom .logout a{
 }
 
 main{
-    margin-top: 1.4rem;
-    margin-right: 1.4rem;
     width: auto;
+    padding: 20px 0px 30px 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 main .banner{
-    height: 30vh;
+    height: 10vh;
     width: auto;
     background-color: white;
-    background-image: url("/image/banner.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
     border-radius: 1rem;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 
 }
 
-main .banner h1{
-    position: absolute;
-    top: 82px;
-    margin-left: 2rem;
-    color: #363949;
+
+main .convo{
+    flex: 1;
 }
 
-main .banner h3{
-    position: absolute;
-    top: 146px;
-    margin-left: 2rem;
-    color: #363949;
+main .send form{
+    display: grid;
+    grid-template-columns: 10rem auto 4rem;
 }
 
-main h1{
-    margin: 2rem auto 2rem 0;
-}
-
-main .meterial{
-    padding : 25px;
-    background-color: beige;
-    border-radius: 1rem;
-    box-shadow:  -15px -15px 15px rgba(255,255,255,0.2),
-                 15px 15px 15px rgba(0,0,0,0.1);
-    /*box-shadow: 10px 10px 13px rgb(115, 121, 124);*/
+main .send form .file-sent{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
-
+    align-items: center;
+    margin-right: 1rem;
 }
 
+main .send form .massage-sent{
+    background-color:#6EC4D5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px 0px 10px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+main .convo{
+    padding: 20px;
+}
+main .convo .incoming{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+main .convo .incoming .chat-image{
+    height: 20px;
+    width: 36px;
+    border-radius: 15px;
+}
+
+main .convo .incoming .chat-image img{
+    border-radius: 15px;
+}
+main .convo .incoming .massage{
+    background-color: #6EC4D5;
+    padding: 10px;
+    border-radius: 8px;
+}
+main .convo .outgoing{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+main .convo .outgoing .massage{
+    background-color: rgb(219, 212, 212);
+    padding: 10px;
+    border-radius: 8px;
+}
+input{
+    background: none;
+    border-radius: 8px;
+    border: 2px solid #717082;
+    padding: 5px;
+}
 .right .top .profile img{
     width: 6rem;
     height: 6rem;
@@ -148,7 +183,54 @@ main .meterial{
     align-items: center;
 }
 
- 
+
+.right .right-sidebar .todo{
+    width: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin: 10px;
+}
+.right .right-sidebar .topic{
+    width: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin: 10px;
+
+}
+
+.right .right-sidebar .schedule{
+    height: 10vh;
+    width: auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    margin: 10px;
+    display: flex;
+}
+.right .right-sidebar .schedule h3{
+    margin-right: 5px;
+}
+.right .right-sidebar .schedule .date{
+    padding: 4px;
+    background-color: #04B69C;
+    border-radius: 4px;
+    color: white;
+}
+.right .right-sidebar .schedule .month{
+    padding: 4px;
+    background-color: none;
+    border-radius: 4px;
+}
+.right .right-sidebar .schedule .year{
+    padding: 4px;
+    background-color: none;
+    border-radius: 4px;
+}
 h2, h1, p, h3, h4{
     color: #363949;
 }
@@ -160,17 +242,6 @@ h2, h1, p, h3, h4{
     margin: 1rem;
 }
 .right .buttom{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-.right .student .profile img{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 1.5rem;
-    margin: 1rem;
-}
-.right .student{
     display: flex;
     justify-content: left;
     align-items: center;
