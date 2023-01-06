@@ -56,8 +56,6 @@ aside .logo img{
     height: 7rem;
 }
 
-aside .close{
-}
 
 aside .sidebar{
     background-color: white;
@@ -151,8 +149,6 @@ main .announcement h2{
     align-items: center;
 }
 
-.right .right-sidebar{
-}
 
 .right .right-sidebar .todo{
     width: auto;
@@ -303,7 +299,7 @@ input{
     background-color: white;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 1rem;
-    display: null;
+    display: none;
 }
 
 .add-schedule{

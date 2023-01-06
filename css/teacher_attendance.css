@@ -334,6 +334,7 @@ main .attendance-top{
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
+    width: auto;
 }
 .show-sheet:hover{
     color:white;
@@ -351,4 +352,5 @@ main .attendance-top{
 
     color: white;
     background-color:#04B69C;
+    cursor: pointer;
 }

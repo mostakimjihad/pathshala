@@ -56,9 +56,6 @@ aside .logo img{
     height: 7rem;
 }
 
-aside .close{
-}
-
 aside .sidebar{
     background-color: white;
     display: flex;
@@ -89,6 +86,7 @@ main{
     margin-top: 1.4rem;
     margin-right: 1.4rem;
     width: auto;
+    position: relative;
 }
 
 main .banner{
@@ -123,17 +121,17 @@ main h1{
 }
 
 main .mark{
-    margin-top : 2rem;
     background-color: white;
-    border-radius: 10px;
-    padding-top: 1rem;
+    border-radius: ;
     padding-bottom : 1rem;  
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 1rem;
 }
 main .mark table{
     width: 100%;
     text-align: center;
 }
+
 td{
     margin: 40px;
     opacity: .80;
@@ -142,6 +140,7 @@ td{
 th{
     padding: 10px;
     background-color: #04B69C;
+    color: white;
 }
 
 
@@ -240,6 +239,47 @@ h2, h1, p, h3, h4{
     padding: 3px 8px;
     border-radius: 5px;
   }
+.add-announcement span{
+    position: absolute;
+    top: 85%;
+    left: 95%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.add-announcement span:hover{
+    background-color: #04B69C;
+    cursor: pointer;
+    color: white;
+}
+
+main .update-mark-popup{
+    background-color:white;
+    padding: 30px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 40%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 50%;
+    display: none;
+}
+
+main .update-mark-popup span{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: #FF2E2E;
+}
+
+
+.post{
+    margin-top: 10px;
+    width: 30%;
+    background-color: #04B69C;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
 .add{
     display: flex;
     justify-content: center;
@@ -304,8 +344,8 @@ input{
     display: none;
 }
 
-main .attendance-top{
-    margin: 20px;
+main .mark-top{
+    margin: 10px;
     display: flex;
 }
 .date{
@@ -313,18 +353,21 @@ main .attendance-top{
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
+    width: auto;
 }
 .create-sheet{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
+    width: auto;
 }
 .show-sheet{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
+    width: auto;
 }
 .show-sheet:hover{
     color:white;
@@ -342,4 +385,15 @@ main .attendance-top{
 
     color: white;
     background-color:#04B69C;
+    cursor: pointer;
+}
+
+button{
+    padding: .4rem;
+    border-radius: 10px;
+}
+button:hover{
+    color: white;
+    background-color: #363949;
+    cursor: pointer;
 }
